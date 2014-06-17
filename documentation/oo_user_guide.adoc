@@ -38,11 +38,11 @@ $ rhc setup --server <broker hostname>
 ----
 
 *Broker Rodando dentro de uma Virtual Machine* +
-Se você utiliza o OpenShift Origin a partir de uma all-in-one VM, você precisará experimentar qual o melhor método para se comunicar com o Broker interno. Em uma recente sessão de troubleshooting, nós determinamos que clientes `rhc` externos não conseguiam se conectar a uma máquina virtual com uma rede NAT. Utilziar uma rede com "bridge" aparentemente resolveu o problema. A configuração específica de rede pode variar com cada servicço de VM (Virtual Box, VMWare, etc.)
+Se você utiliza o OpenShift Origin a partir de uma all-in-one VM, você precisará experimentar qual o melhor método para se comunicar com o Broker interno. Em uma recente sessão de troubleshooting, nós determinamos que clientes `rhc` externos não conseguiam se conectar a uma máquina virtual com uma rede NAT. Utilizar uma rede com "bridge" aparentemente resolveu o problema. A configuração específica de rede pode variar com cada servicço de VM (Virtual Box, VMWare, etc.)
 
 Uma vez que você entrar com o comando acima, o terminal solicitará o usuário com o qual voc6e gostaria de se autenticar. Caso você utilize o link:oo_deployment_guide_vm.html[OpenShift Origin virtual machine], você pode se autenticar com o usuário "demo" e a senha "changeme".
 
-O próximo passo do processo de instalação consiste em criar e fazer o upload de uma chave SSH para o broker. Isso é necessário para realziar push nos códigos fonte, através do Git, para o OpenShift Origin server.
+O próximo passo do processo de instalação consiste em criar e fazer o upload de uma chave SSH para o broker. Isso é necessário para realizar push do código fonte, através do Git, para o OpenShift Origin server.
 
 Finalmente, será solicitado que você crie um namespace para a conta. O namespace deve ser único e será parte da URL de sua aplicação. Ele é comumente chamado de domain. O namespace pode ter no máximo 16 caracteres e pode conter apenas caracteres alfanuméricos. Há uma relação de 1:1 entre os usuários e os namespaces. Para os exemplos neste documento, o namespace `<yourdomain>` será utilizado. 
 
